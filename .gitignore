@@ -101,5 +101,6 @@ spec/
 vendor/extensions/**/spec/dummy
 
 #townofmassanutten.org
-config/database.yml
-config/deploy.rb
+/config/database.yml
+/config/deploy.rb
+/config/secrets.yml
