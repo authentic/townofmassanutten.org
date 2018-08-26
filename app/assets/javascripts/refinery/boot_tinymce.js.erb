@@ -4,7 +4,7 @@ function init_tinymce_for(jq_selector) {
     menubar : false,
     toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image anchor | fullscreen | code",
     content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
-    plugins: ["advlist", "anchor", "image", "link", "fullscreen", "code", "stylebuttons"],
+    plugins: ["wordcount", "autoresize", "autolink", "advlist", "anchor", "image", "link", "fullscreen", "code", "stylebuttons"],
     skin_url: '/assets/tinymce/skins/lightgray',
 
     file_browser_callback   : function(field_name, url, type, win) {

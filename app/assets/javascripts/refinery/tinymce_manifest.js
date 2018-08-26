@@ -16,6 +16,9 @@
  *= require tinymce/plugins/code/plugin
  *= require tinymce/plugins/advlist/plugin
  *= require tinymce/plugins/anchor/plugin
+ *= require tinymce/plugins/autolink/plugin
+ *= require tinymce/plugins/autoresize/plugin
+ *= require tinymce/plugins/wordcount/plugin
  *= require refinery/boot_tinymce
  *= require_self
 */
