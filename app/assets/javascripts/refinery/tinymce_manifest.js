@@ -36,7 +36,6 @@
  *= require tinymce/plugins/visualblocks/plugin
  *= require tinymce/plugins/visualchars/plugin
  *= require tinymce/plugins/searchreplace/plugin
- *= require tinymce/plugins/spellchecker/plugin
  *= require tinymce/plugins/colorpicker/plugin
  *= require tinymce/plugins/textcolor/plugin
  *= require refinery/boot_tinymce
