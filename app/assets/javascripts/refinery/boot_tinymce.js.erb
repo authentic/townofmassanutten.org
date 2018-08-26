@@ -1,10 +1,11 @@
 function init_tinymce_for(jq_selector) {
   tinymce.init({
     selector: jq_selector,
-    menubar : false,
-    toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image | fullscreen | code",
-    content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
-    plugins: ["advlist", "image", "link", "fullscreen", "code", "stylebuttons"],
+    menubar : ["file", "edit", "view", "insert", "format", "tools"],
+    toolbar:  "undo redo ltr rtl paste preview visualblocks visualchars save print searchreplace | styleselect a11ycheck | style-p style-h1 style-h2 style-h3 | bold italic forecolor backcolor | bullist numlist outdent indent | link image anchor restoredraft charmap emoticons insertdatetime nonbreaking media pagebreak table template | fullpage fullscreen code codesample spellchecker",
+      contextmenu: "link image inserttable | cell row column deletetable",
+      content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
+    plugins: ["advlist", "anchor", "autolink", "autoresize", "autosave", "bbcode", "charmap", "code", "codesample", "colorpicker", "contextmenu", "directionality", "emoticons", "fullpage", "fullscreen", "hr", "image", "imagetools", "importcss", "insertdatetime", "link", "media", "nonbreaking", "noneditable", "pagebreak", "paste", "preview", "print", "save", "searchreplace", "spellchecker", "stylebuttons", "tabfocus", "table", "template", "textcolor", "textpattern", "visualblocks", "visualchars", "wordcount"],
     skin_url: '/assets/tinymce/skins/lightgray',
 
     file_browser_callback   : function(field_name, url, type, win) {
