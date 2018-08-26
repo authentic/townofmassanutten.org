@@ -20,8 +20,6 @@
  *= require tinymce/plugins/autoresize/plugin
  *= require tinymce/plugins/wordcount/plugin
  *= require tinymce/plugins/bbcode/plugin
- *= require tinymce/plugins/charmap/plugin
- *= require tinymce/plugins/colorpicker/plugin
  *= require refinery/boot_tinymce
  *= require_self
 */
