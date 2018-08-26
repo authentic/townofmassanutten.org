@@ -33,6 +33,10 @@
  *= require tinymce/plugins/preview/plugin
  *= require tinymce/plugins/print/plugin
  *= require tinymce/plugins/save/plugin
+ *= require tinymce/plugins/visualblocks/plugin
+ *= require tinymce/plugins/visualchars/plugin
+ *= require tinymce/plugins/searchreplace/plugin
+ *= require tinymce/plugins/spellchecker/plugin
  *= require refinery/boot_tinymce
  *= require_self
 */

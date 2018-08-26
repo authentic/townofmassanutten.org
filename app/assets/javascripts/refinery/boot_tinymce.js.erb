@@ -2,9 +2,9 @@ function init_tinymce_for(jq_selector) {
   tinymce.init({
     selector: jq_selector,
     menubar : false,
-    toolbar:  "undo redo paste preview save print| styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image anchor charmap emoticons insertdatetime media nonbreaking | fullscreen | code table pagebreak",
+    toolbar:  "undo redo paste preview save print| styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image anchor charmap emoticons insertdatetime media nonbreaking visualchars | fullscreen | code visualblocks table pagebreak searchreplace spellchecker",
     content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
-    plugins: ["media", "nonbreaking", "pagebreak", "paste", "preview", "print", "save", "contextmenu", "table", "insertdatetime", "hr", "emoticons", "charmap", "bbcode", "wordcount", "autoresize", "autolink", "advlist", "anchor", "image", "link", "fullscreen", "code", "stylebuttons"],
+    plugins: ["searchreplace", "spellchecker", "visualblocks", "visualchars","media", "nonbreaking", "pagebreak", "paste", "preview", "print", "save", "contextmenu", "table", "insertdatetime", "hr", "emoticons", "charmap", "bbcode", "wordcount", "autoresize", "autolink", "advlist", "anchor", "image", "link", "fullscreen", "code", "stylebuttons"],
     contextmenu: "link image inserttable | cell row column deletetable",
     skin_url: '/assets/tinymce/skins/lightgray',
 
