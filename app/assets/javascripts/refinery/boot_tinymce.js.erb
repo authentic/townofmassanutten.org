@@ -5,7 +5,6 @@ function init_tinymce_for(jq_selector) {
     toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic forecolor backcolor | bullist numlist outdent indent | link image anchor charmap | fullscreen | code",
     content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
     plugins: [ "bbcode", "charmap", "colorpicker", "textcolor", "contextmenu", "wordcount", "autoresize", "autolink", "advlist", "anchor", "image", "link", "fullscreen", "code", "stylebuttons"],
-      contextmenu: "link image inserttable | cell row column deletetable",
     skin_url: '/assets/tinymce/skins/lightgray',
 
     file_browser_callback   : function(field_name, url, type, win) {
