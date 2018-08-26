@@ -23,6 +23,9 @@
  *= require tinymce/plugins/charmap/plugin
  *= require tinymce/plugins/emoticons/plugin
  *= require tinymce/plugins/hr/plugin
+ *= require tinymce/plugins/insertdatetime/plugin
+ *= require tinymce/plugins/table/plugin
+ *= require tinymce/plugins/contextmenu/plugin
  *= require refinery/boot_tinymce
  *= require_self
 */
