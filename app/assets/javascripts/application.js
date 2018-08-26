@@ -14,4 +14,5 @@
 //= require turbolinks
 //= require jquery-1.6.2.min
 //= require cloud-zoom.1.0.2
+//= require refinery/tinymce_manifest.js
 //= require_tree .
