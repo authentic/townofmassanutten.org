@@ -26,6 +26,13 @@
  *= require tinymce/plugins/insertdatetime/plugin
  *= require tinymce/plugins/table/plugin
  *= require tinymce/plugins/contextmenu/plugin
+ *= require tinymce/plugins/media/plugin
+ *= require tinymce/plugins/nonbreaking/plugin
+ *= require tinymce/plugins/pagebreak/plugin
+ *= require tinymce/plugins/paste/plugin
+ *= require tinymce/plugins/preview/plugin
+ *= require tinymce/plugins/print/plugin
+ *= require tinymce/plugins/save/plugin
  *= require refinery/boot_tinymce
  *= require_self
 */
