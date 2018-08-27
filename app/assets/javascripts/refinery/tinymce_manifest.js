@@ -22,14 +22,11 @@
  *= require tinymce/plugins/image/plugin
  *= require tinymce/plugins/template/plugin
  *= require tinymce/plugins/codesample/plugin
- *= require tinymce/plugins/stylebuttons/plugin
  *= require tinymce/plugins/table/plugin
  *= require tinymce/plugins/charmap/plugin
  *= require tinymce/plugins/advlist/plugin
  *= require tinymce/plugins/anchor/plugin
- *= require tinymce/plugins/autoresize/plugin
  *= require tinymce/plugins/wordcount/plugin
- *= require tinymce/plugins/bbcode/plugin
  *= require tinymce/plugins/emoticons/plugin
  *= require tinymce/plugins/hr/plugin
  *= require tinymce/plugins/insertdatetime/plugin
