@@ -26,7 +26,6 @@
  *= require tinymce/plugins/advlist/plugin
  *= require tinymce/plugins/anchor/plugin
  *= require tinymce/plugins/wordcount/plugin
- *= require tinymce/plugins/emoticons/plugin
  *= require tinymce/plugins/hr/plugin
  *= require tinymce/plugins/insertdatetime/plugin
  *= require tinymce/plugins/contextmenu/plugin
