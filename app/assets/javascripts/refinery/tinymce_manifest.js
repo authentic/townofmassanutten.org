@@ -11,7 +11,6 @@
  *= require tinymce/tinymce.jquery
  *= require tinymce/plugins/print/plugin
  *= require tinymce/plugins/preview/plugin
- *= require tinymce/plugins/fullpage/plugin
  *= require tinymce/plugins/searchreplace/plugin
  *= require tinymce/plugins/autolink/plugin
  *= require tinymce/plugins/visualblocks/plugin
