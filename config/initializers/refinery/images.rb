@@ -33,8 +33,8 @@ Refinery::Images.configure do |config|
   # This includes all dragonfly config for Dragonfly v 1.1.1
 
   config.dragonfly_name = :refinery_images
-  # config.dragonfly_verify_urls = true
-  # config.dragonfly_secret = "713f1e4d1b468648ed0ee0758e73b452ca41ecb36641acde"
+   config.dragonfly_verify_urls = false
+   config.dragonfly_secret = "9ad03dc471b976f872d986cf59bef6ef792286db8b5f480cbf491e026ed8ebd5"
   # config.dragonfly_url_host = ""
   # config.dragonfly_datastore_root_path = "/home/olga/Sites/townofmassanutten.org/public/system/refinery/images"
   # config.dragonfly_url_format = "/system/refinery/images/:job/:basename.:ext"
