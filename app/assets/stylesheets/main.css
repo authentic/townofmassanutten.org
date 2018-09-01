@@ -1,0 +1,15 @@
+.table {
+    width: 100%;
+}
+
+
+.table th, .table td {
+    border-bottom: 1px solid #dfe2e4;
+}
+.table td, .table tbody th {
+    padding: 6px 20px;
+}
+
+.table tr:nth-child(2n) {
+    background: #f3f4f5;
+}

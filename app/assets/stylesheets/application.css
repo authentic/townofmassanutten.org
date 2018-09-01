@@ -14,5 +14,6 @@
  *= require refinery/formatting
  *= require refinery/theme
  *= require cloud-zoom
+ *= require main
  *= require_self
  */
