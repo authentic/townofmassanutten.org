@@ -4,6 +4,8 @@
 <%= tag(:meta, name: 'description', content: @meta.meta_description) if @meta.meta_description.present? -%>
 <%= tag(:link, href: request.protocol+request.host_with_port+@canonical, rel: 'canonical') if @canonical.present? -%>
 <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
+<%= tag(:link, href:'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,300i,400,500,700', rel: 'stylesheet') %>
+
 <%= yield :meta %>
 
 <%= stylesheet_link_tag "application" %>
