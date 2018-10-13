@@ -1,5 +1,9 @@
 {
   "name": "townofmassanutten_org",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "csscomb": "^4.2.0",
+    "stylelint-config-htmlacademy": "^0.1.1"
+  }
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<head>
+  <%= render "/refinery/head" %>
+  <%= render "/refinery/javascripts" %>
+</head>
+<body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
+
+<div id="page_container">
+  <header class="main-header" id="header" role="banner">
+    <div class="container">
+
+      <h1>Town Incorporation of Massanutten <br> Feasibility Study</h1>
+
+    </div>
+  </header>
+  <main class="container" id="page" role="main">
+    <div class="inner"><p>
+      <img src="../../../system/refinery/images/W1siZiIsIjIwMTgvMDkvMDcvNGRneGduNzV6Nl9ob21lcGFnZW5ldy5qcGciXV0/homepagenew.jpg" alt="Town of Massanutten Area" width="940">
+    </p></div>
+    <nav class="homeNav">
+      <div class="homeNav-wrapper">
+        <ul class="site-navigation">
+          <li class="homeNav_1 button"><%= link_to "View Report", "/forward" %></li>
+          <li class="homeNav_2 button"><%= link_to("View Study Videos", "") %></li>
+          <li class="homeNav_3 button"><%= link_to("Print Final Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMDkvMjkvNTJ6Z2R1NjRxc190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf?sha=558055e5eb1d09df", :target => "_blank") %></li>
+          <li class="homeNav_4 button"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMDkvMjkvNmdrempkMWYyel90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf?sha=a58f2cc35c5da3e4", :target => "_blank") %></li>
+        </ul>
+      </div>
+    </nav>
+  </main>
+  <footer class="main-footer" role="contentinfo">
+    <%= render "/refinery/footer" -%>
+  </footer>
+</div>
+</body>
+</html>
