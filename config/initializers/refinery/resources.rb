@@ -1,7 +1,7 @@
 # encoding: utf-8
 Refinery::Resources.configure do |config|
   # Configures the maximum allowed upload size (in bytes) for a file upload
-  # config.max_file_size = 52428800
+  config.max_file_size = 52428800
 
   # Configure how many resources per page should be displayed when a dialog is presented that contains resources
   # config.pages_per_dialog = 12
@@ -13,8 +13,8 @@ Refinery::Resources.configure do |config|
   # Refer to config/initializers/refinery/dragonfly.rb for the full list of dragonfly configurations which can be used.
   # This includes all dragonfly config for Dragonfly v 1.1.1
 
-  # config.dragonfly_verify_urls     = true
-  # config.dragonfly_secret          = "713f1e4d1b468648ed0ee0758e73b452ca41ecb36641acde"
+    config.dragonfly_verify_urls     = false
+    config.dragonfly_secret          = "9ad03dc471b976f872d986cf59bef6ef792286db8b5f480cbf491e026ed8ebd5"
   # config.dragonfly_url_host        = ""
   # config.dragonfly_datastore_root_path = "/home/olga/Sites/townofmassanutten.org/public/system/refinery/resources"
   # config.dragonfly_url_format       = "/system/refinery/resources/:job/:basename.:ext"
