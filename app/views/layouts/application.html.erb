@@ -8,13 +8,25 @@
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
     <div id="page_container">
-      <header id="header" role="banner">
+      <header class="main-header">
         <%= render "/refinery/header" -%>
       </header>
       <main class="container" id="page" role="main">
-        <%= yield %>
+        <div class="flex-container">
+          <div> <% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
+                <%=
+                    main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
+                    main_menu.menu_role = 'navigation'
+                    main_menu.to_html
+                %>
+            <% end %></div>
+          <div><%= yield %></div>
+        </div>
+
+
+
       </main>
-      <footer role="contentinfo">
+      <footer class="main-footer" role="contentinfo">
         <%= render "/refinery/footer" -%>
       </footer>
     </div>

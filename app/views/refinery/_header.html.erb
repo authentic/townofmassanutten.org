@@ -1,13 +1,9 @@
+<div class="container">
 <%= content_tag :div, id: "logo", itemscope: "",  itemtype: "http://schema.org/Organization" do %>
-  <%= link_to refinery.root_path, itemprop: "url" do %>
-    <%= Refinery::Core.site_name %>
-  <% end %>
-<% end %>
+  <%= link_to refinery.root_path, itemprop: "" do %>
+  <%= image_tag("Newheader.png") %>
 
-<% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
-  <%=
-    main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
-    main_menu.menu_role = 'navigation'
-    main_menu.to_html
-  %>
-<% end %>
+        <h1 class="visually-hidden"><%= Refinery::Core.site_name %></h1>
+  <% end %>
+<% end %></div>
+
