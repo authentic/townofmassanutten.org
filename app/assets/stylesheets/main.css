@@ -100,3 +100,7 @@ a:focus {
     width: 640px;
     order: 2;
 }
+.header {
+    border: none;
+    border-radius: 25px;
+}
