@@ -103,7 +103,7 @@ a:focus {
 .table tbody td {
     font-size: 12px;
 }
-.table tr:nth-child(even) {
+.table tbody tr:nth-child(even) {
     background: #D0E4F5;
 }
 .table thead {
