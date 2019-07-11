@@ -15,8 +15,11 @@ body {
 
     background-color: #f8f8ed;
 }
-
+a {
+    text-decoration: none;
+}
 .button a {
+
     font: inherit;
 
     text-align: center;
@@ -68,7 +71,7 @@ body {
     line-height: normal;
     text-rendering: optimizelegibility;
     text-align: center;
-    font-style: italic;
+    font-style:normal;
 }
 
 .homeNav {
@@ -110,6 +113,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 
 }
 
