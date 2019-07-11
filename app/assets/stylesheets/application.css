@@ -13,8 +13,9 @@
  *= require main
  *= require home
  *= require normalize
+ *= require cloud-zoom
  *= require refinery/formatting
  *= require refinery/theme
- *= require cloud-zoom
+
 
  */
