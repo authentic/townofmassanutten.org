@@ -29,8 +29,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    background: #feeb95;
-    color: #0088cc;
+     color: #cc963b;
 }
 
 a:focus {
