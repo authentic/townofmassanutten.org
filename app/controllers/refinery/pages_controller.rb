@@ -32,8 +32,8 @@ module Refinery
       elsif should_redirect_to_friendly_url?
         redirect_to refinery.url_for(page.url), status: 301 and return
       end
-
-      render_with_templates?
+      render layout: 'application'
+      # render_with_templates?
     end
 
   protected

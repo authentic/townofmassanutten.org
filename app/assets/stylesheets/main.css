@@ -1,4 +1,5 @@
 
+
 body, html {
     min-width: 1122px;
 }
@@ -29,7 +30,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-     color: #cc963b;
+    color: #cc963b;
 }
 
 a:focus {
@@ -53,24 +54,6 @@ a:focus {
 
 .nav a {
     color: #52312f;
-}
-
-.table {
-    width: 100%;
-}
-
-.table th,
-.table td {
-    border-bottom: 1px solid #dfe2e4;
-}
-
-.table td,
-.table tbody th {
-    padding: 6px 20px;
-}
-
-.table tr:nth-child(2n) {
-    background: #f3f4f5;
 }
 
 .visually-hidden {
@@ -102,4 +85,53 @@ a:focus {
 .header {
     border: none;
     border-radius: 25px;
+}
+
+
+.table {
+    border: 1px solid #CCCCCC;
+    background-color: #EEDEC6;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    line-height: 18px;
+}
+.table td, .table th {
+    border: 1px solid #AAAAAA;
+    padding: 7px 7px;
+}
+.table tbody td {
+    font-size: 12px;
+}
+.table tr:nth-child(even) {
+    background: #D0E4F5;
+}
+.table thead {
+    background: #737373;
+    background: -moz-linear-gradient(top, #969696 0%, #818181 66%, #737373 100%);
+    background: -webkit-linear-gradient(top, #969696 0%, #818181 66%, #737373 100%);
+    background: linear-gradient(to bottom, #969696 0%, #818181 66%, #737373 100%);
+}
+.table thead th {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 1px solid #CCCCCC;
+}
+.table thead th:first-child {
+    border-left: none;
+}
+
+.table tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #737373;
+    background: -moz-linear-gradient(top, #969696 0%, #818181 66%, #737373 100%);
+    background: -webkit-linear-gradient(top, #969696 0%, #818181 66%, #737373 100%);
+    background: linear-gradient(to bottom, #969696 0%, #818181 66%, #737373 100%);
+}
+.table tfoot td {
+    font-size: 14px;
 }
