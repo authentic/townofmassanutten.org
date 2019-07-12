@@ -1,15 +1,12 @@
 
-body, html {
-    min-width: 1122px;
-}
-
 body {
+    min-width: 320px;
     margin: 0;
     padding: 0;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     font-family: "Roboto", "Arial", sans-serif;
     color: #545d62;
 
@@ -62,10 +59,21 @@ a {
 
 }
 
-.home-title {
+ h1.home-title {
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     font-size: 45px;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    color: #620903;
+    line-height: normal;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    font-style:normal;
+}
+ h2.home-title {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+    font-size: 35px;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     color: #620903;
     line-height: normal;
