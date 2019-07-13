@@ -1,18 +1,167 @@
-
-
 body {
     min-width: 320px;
     margin: 0;
     padding: 0;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;;
     font-family: "Roboto", "Arial", sans-serif;
     color: #545d62;
     background-color: #f8f8ed;
 }
 
+#page_container {
+    margin: 36px auto;
+    width: 90%;
+}
+.header__title--home {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    color: #620903;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+
+
+@media (min-width: 768px){
+    .header__title--home {
+
+        font-size: 1.25em; /* 20px / 16px */
+    }
+
+}
+@media (min-width: 1200px) {
+    .header__title--home  {
+        font-size: 1.5em; /* 24px / 16px */
+    }
+}
+
+.button a {
+
+    font: inherit;
+
+    text-align: center;
+    color: #f8f8ed;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #80b0e1;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover a,
+.button:focus a,
+.button:active a {
+    background: #feeb95;
+    color: #80b0e1;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
+}
+
+
+
+.homeNav {
+    font-size: 0.875em; /* 14px / 16px */
+
+}
+
+.homeNav_1 {
+    flex-basis: 22%;
+    margin: auto;
+
+}
+
+.homeNav_2 {
+    flex-basis: 22%;
+    margin: auto;
+}
+
+.homeNav_3 {
+    flex-basis: 22%;
+    margin: auto;
+}
+
+.homeNav_4 {
+    flex-basis: 22%;
+    margin: auto;
+
+}
+
+.homeNav-wrapper {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.site-navigation a {
+    display: block;
+    padding: 8px 15px;
+
+}
+
+/*Сеточные стили*/
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-footer {
+    margin-top: 5px;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-copyright {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0088cc;
+
+}
 
 a:hover,
 a:focus,
@@ -28,8 +177,6 @@ a:focus {
 .menu {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
-    line-height: 20px;
     align-items: center;
     background-color: transparent;
 }
@@ -81,14 +228,14 @@ a:focus {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-    line-height: 18px;
+    line-height: 1.1em;
 }
 .table td, .table th {
     border: 1px solid #AAAAAA;
     padding: 7px 7px;
 }
 .table tbody td {
-    font-size: 12px;
+    font-size: 0.75em;/* 12px / 16px */
 }
 .table tbody tr:nth-child(even) {
     background: #D0E4F5;
@@ -100,7 +247,7 @@ a:focus {
     background: linear-gradient(to bottom, #969696 0%, #818181 66%, #737373 100%);
 }
 .table thead th {
-    font-size: 14px;
+    font-size: 0.875em;/* 14px / 16px */
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
@@ -111,7 +258,7 @@ a:focus {
 }
 
 .table tfoot {
-    font-size: 14px;
+    font-size: 0.875em;/* 14px / 16px */
     font-weight: bold;
     color: #FFFFFF;
     background: #737373;
@@ -120,124 +267,5 @@ a:focus {
     background: linear-gradient(to bottom, #969696 0%, #818181 66%, #737373 100%);
 }
 .table tfoot td {
-    font-size: 14px;
+    font-size: 0.875em;/* 14px / 16px */
 }
- /*td.separator {
-    background-color: #CCCCCC;
-    padding: 0;
-    line-height: 1px;
-}
-
-
-body {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 27px;
-    font-family: "Arial", sans-serif;
-    color: #f7f4f1;
-    font-style: normal;
-    background-color: #292929;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-/!* Файл mixins.less *!/
-/!* Файл outlines.less *!/
-body {
-    background: #292929 url("img/bb-mobile.png") no-repeat 50% 0;
-    background-size: 720px auto;
-    min-height: 750px;
-}
-@media (min-width: 768px) {
-    body {
-        background: #292929 url("img/bb-tablet.png") no-repeat 50% 0;
-        background-size: 1178px auto;
-    }
-}
-@media (min-width: 1200px) {
-    body {
-        background: #292929 url("img/bb-desktop.png") no-repeat 50% 0;
-        background-size: 1391px auto;
-    }
-}
-/!* Файл blocks/page-header.less *!/
-.page-header {
-    display: flex;
-    flex-direction: column;
-}
-.page-header__logo {
-    height: 85px;
-}
-@media (min-width: 768px) {
-    .page-header__logo {
-        order: 2;
-        height: 400px;
-    }
-}
-@media (min-width: 1200px) {
-    .page-header__logo {
-        height: 648px;
-    }
-}
-.page-header,
-.page-header__logo {
-    outline: none;
-    background: transparent;
-}
-.page-header::before,
-.page-header__logo::before {
-    display: none;
-}
-.page-header__logo {
-    background: rgba(255, 255, 255, 0.5);
-}
-/!* Файл blocks/main-nav.less *!/
-.main-nav {
-    width: 320px;
-    margin: 0 auto;
-}
-.main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    /!* Временно для сетки *!/
-    min-height: 50px;
-}
-.site-list {
-    /!* Временно для сетки *!/
-    min-height: 255px;
-}
-@media (min-width: 768px) {
-    .main-nav {
-        width: auto;
-        margin: 0;
-    }
-    .main-nav__wrapper {
-        display: flex;
-        justify-content: space-between;
-        width: 640px;
-        margin: 0 auto;
-    }
-    .site-list {
-        width: 570px;
-        /!* Временно для сетки *!/
-        min-height: 70px;
-    }
-    .user-list {
-        width: 60px;
-    }
-}
-@media (min-width: 1200px) {
-    .main-nav__wrapper {
-        width: 960px;
-    }
-    .site-list {
-        width: 780px;
-    }
-    .user-list {
-        width: 160px;
-    }
-}*/

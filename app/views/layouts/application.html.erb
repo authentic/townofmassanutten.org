@@ -7,8 +7,8 @@
   </head>
   <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
     <%= site_bar -%>
-    <div id="page_container">
-      <header class="main-header">
+    <div id="page">
+      <header class="header">
         <%= render "/refinery/header" -%>
       </header>
       <main class="container" id="page" role="main">
@@ -23,10 +23,8 @@
           <div><%= yield %></div>
         </div>
 
-
-
       </main>
-      <footer class="main-footer" role="contentinfo">
+      <footer class="footer" role="contentinfo">
         <%= render "/refinery/footer" -%>
       </footer>
     </div>
