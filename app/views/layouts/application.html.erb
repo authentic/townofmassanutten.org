@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <%= render "/refinery/html_tag" %>
-  <% site_bar = render('/refinery/site_bar', :head => true) -%>
-  <head>
-    <%= render "/refinery/head" %>
-    <%= render "/refinery/javascripts" %>
-  </head>
-  <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
-    <%= site_bar -%>
-    <div id="page">
-      <header class="header">
-        <%= render "/refinery/header" -%>
-      </header>
-      <main class="container" id="page" role="main">
-        <div class="flex-container">
-          <div> <% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
-                <%=
-                    main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
-                    main_menu.menu_role = 'navigation'
-                    main_menu.to_html
-                %>
-            <% end %></div>
-          <div><%= yield %></div>
-        </div>
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<head>
+  <%= render "/refinery/head" %>
+  <%= render "/refinery/javascripts" %>
+</head>
+<body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
 
-      </main>
-      <footer class="footer-area" role="contentinfo">
-        <%= render "/refinery/footer" -%>
-      </footer>
+<div class="outer-wrap">
+  <%= site_bar -%>
+
+  <header class="header-area">
+    <div class="centered">
+      <%= render "/refinery/header" -%>
     </div>
-  </body>
+    <!-- .centered -->
+  </header>
+  <!-- .header-area -->
+  <div class="content">
+    <div class="sidebar">
+      <div>
+        <% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
+            <%=
+                main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
+                main_menu.menu_role = 'navigation'
+                main_menu.to_html
+            %>
+        <% end %></div>
+    </div><!-- .sidebar -->
+  <main class="main-area">
+
+
+      <div><%= yield %></div>
+
+
+  </main>
+  </div>    <!-- .content -->
+  <footer class="footer-area">
+    <%= render "/refinery/footer" -%>
+  </footer>
+
+</div><!-- .outer-wrap -->
+</body>
 </html>
