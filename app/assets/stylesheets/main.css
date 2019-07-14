@@ -1,9 +1,53 @@
-body {
-    min-width: 320px;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8ed;
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
+
+
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
@@ -106,9 +150,65 @@ small {
 big {
     font-size: 125%;
 }
+
+
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+body {
+    /*min-width: 320px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    background-color: #f8f8ed;
+}
+
+.masthead {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    color: #620903;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.site-title {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+
+
+
+@media screen and (min-width: 44.44em) {
+    .site-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .site-title {
+        font-size: 2.5em;
+    }
+}
+
+.site-title a {
+    color: hsl(5, 45%, 95%);
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    text-decoration: underline;
+}
 /*__________________________________________________________________________________________________________*/
 
 /* Base styles */
+
+
 
 .site-title {
     margin-bottom: 0;
@@ -148,7 +248,7 @@ big {
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     color: #620903;
     text-rendering: optimizelegibility;
-font-size: 0.8em;
+font-size: 0.85em;
     font-style: normal;
 
     }
@@ -262,38 +362,7 @@ font-size: 0.8em;
 
 }
 
-.masthead {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-    color: #620903;
-    text-rendering: optimizelegibility;
-    text-align: center;
-    font-style: normal;
-    margin-bottom: 5px;
-}
-
-/*
-@media screen and (max-width: 768px), screen and (min-width: 1200px) {
-    .header__title--home {
-
-        font-size: 1.25em; /!* 20px / 16px *!/
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .header__title--home {
-        font-size: 1.5em; /!* 24px / 16px *!/
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .header__title--home {
-        font-size: 1em; /!* 24px / 16px *!/
-    }
-}
-*/
+/*________________________________________________________*/
 
 .button a {
 
@@ -400,7 +469,7 @@ font-size: 0.8em;
 
 }
 .homeNav-wrap{
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
 
 }
@@ -413,20 +482,6 @@ font-size: 0.8em;
 }*/
 
 
-/*--------------------------------------------------------------
-Layouts
---------------------------------------------------------------*/
-
-.centered {
-    margin: 0 auto;
-    padding: 0 1em;
-}
-
-@media screen and (min-width: 52em) {
-    .centered {
-        max-width: 52em;
-    }
-}
 
 img {
     max-width: 100%;
@@ -498,7 +553,7 @@ a:focus {
     border: none;
     border-radius: 25px;
 }
-
+/*_________________________________________________________________*/
 .table {
     border: 1px solid #CCCCCC;
     background-color: #EEDEC6;
@@ -552,36 +607,4 @@ a:focus {
 
 .table tfoot td {
     font-size: 0.875em; /* 14px / 16px */
-}
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers */
-.screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000; /* Above WP toolbar */
 }

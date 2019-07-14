@@ -8,22 +8,27 @@
 <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
 
 <div class="outer-wrap">
+
   <header class="masthead">
-    <h1>Town Incorporation of Massanutten</h1>
+    <div class="centered">
+      <div class="site-branding">
+        <h1>Town Incorporation of Massanutten</h1>
 
-    <p>Feasibility Study</p>
+        <p>Feasibility Study</p>
+      </div>    <!-- .site-title -->
+    </div>  <!-- .centered -->
 
-  </header>
+  </header> <!-- .masthead -->
+
+
   <div class="content">
-    <!--<div class="sidebar">
 
-    </div>&lt;!&ndash; .sidebar &ndash;&gt;-->
 
     <main class="main-area">
       <article class="post-content">
-      <div>
-        <img src="../../../system/refinery/images/W1siZiIsIjIwMTgvMDkvMDcvNGRneGduNzV6Nl9ob21lcGFnZW5ldy5qcGciXV0/homepagenew.jpg" alt="Town of Massanutten Area" width="940">
-      </div>
+        <div>
+          <img src="../../../system/refinery/images/W1siZiIsIjIwMTgvMDkvMDcvNGRneGduNzV6Nl9ob21lcGFnZW5ldy5qcGciXV0/homepagenew.jpg" alt="Town of Massanutten Area" width="940">
+        </div>
       </article>
     </main>
 
@@ -31,6 +36,9 @@
   <!-- .content -->
   <footer class="footer-area" role="contentinfo">
     <div class="homeNav-wrap">
+      <!-- <nav class="main-menu">
+         The menu would go here
+       </nav>-->
       <nav class="homeNav">
 
         <div class="button homeNav_1"><%= link_to "View Report", "/forward" %></div>
@@ -38,8 +46,8 @@
         <div class="button homeNav_3"><%= link_to("Print Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvNjFlemIzcnk1el90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf", :target => "_blank") %></div>
         <div class="button homeNav_4"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvOHdseHYycHlva190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf", :target => "_blank") %></div>
 
-    </nav>
-      </div>
+      </nav>
+    </div>
     <%= render "/refinery/footer" -%>
   </footer>
 </div>
