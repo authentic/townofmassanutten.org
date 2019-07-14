@@ -310,7 +310,7 @@ body {
 .secondary-menu__button a {
 
     font: inherit;
-    width: 180px;
+    width: 140px;
     text-align: center;
     color: #f8f8ed;
     vertical-align: middle;
@@ -362,7 +362,7 @@ body {
 }
 
 .secondary-menu__wrapper {
-    max-width: 1050px;
+    max-width: 820px;
     margin: 0 auto;
 
 }
