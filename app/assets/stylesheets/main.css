@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
@@ -46,7 +45,6 @@ Layouts
         max-width: 52em;
     }
 }
-
 
 /*--------------------------------------------------------------
 Typography
@@ -151,68 +149,36 @@ big {
     font-size: 125%;
 }
 
-
 /*--------------------------------------------------------------
-Header styles minus menu
+Header styles
 --------------------------------------------------------------*/
 body {
-    /*min-width: 320px;*/
+    min-width: 320px;
     /*margin: 0;*/
     /*padding: 0;*/
     background-color: #f8f8ed;
 }
 
-.masthead {
+.header-area{
+    margin-bottom: 5px;
+}
+
+.site-title {
     font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     color: #620903;
     text-rendering: optimizelegibility;
     text-align: center;
     font-style: normal;
-    margin-bottom: 5px;
-}
-
-.site-title {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-size: 2em;
-    font-weight: 300;
-    text-align: center;
-    color: black;
-}
+    margin-bottom: 0;
+   }
 
 
 
-@media screen and (min-width: 44.44em) {
-    .site-title {
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 50em) {
-    .site-title {
-        font-size: 2.5em;
-    }
-}
-
-.site-title a {
-    color: hsl(5, 45%, 95%);
-    text-decoration: none;
-}
-
-.site-title a:hover {
-    text-decoration: underline;
-}
 /*__________________________________________________________________________________________________________*/
 
 /* Base styles */
 
-
-
-.site-title {
-    margin-bottom: 0;
-}
 .main-menu {
     padding: .4em 1em;
     color: white;
@@ -229,30 +195,27 @@ body {
     overflow: hidden;
 }
 
-
-
 .footer-area {
-    padding: .4em 1em;
+    padding: .5em 1em;
     text-align: center;
 }
-
 
 .footer-area .container {
     display: flex;
 }
 
-.footer-copyright {
+.footer-area__copyright {
     width: 320px;
     margin: 0 auto;
     font-family: 'Libre Baskerville', serif;
     text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
     color: #620903;
     text-rendering: optimizelegibility;
-font-size: 0.85em;
+    font-size: 0.85em;
     font-style: normal;
+    padding: .9em 1em;
 
-    }
-
+}
 
 /* Sidebar switcher buttons */
 
@@ -285,7 +248,7 @@ font-size: 0.85em;
 
 /* Flexbox stuff */
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 40em) {
 
     .outer-wrap {
         display: flex;
@@ -332,42 +295,22 @@ font-size: 0.85em;
     }
 
 }
-/*___________________________________________________________________________________________________________*/
-
-@media screen and (min-width: 40em) {
-
-    .outer-wrap {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content {
-        display: flex;
-    }
-
-    .main-area {
-        flex: 1 1 auto;
-
-    }
-
-    .post-content {
-        max-width: 40em;
-        margin: 0 auto;
-    }
-
-    .sidebar {
-        flex: 0 0 12em;
-        background-color: #0088cc;
-    }
+/*________________________________________________________*/
+.secondary-menu {
+    font-size: 0.875em; /* 14px / 16px */
+    list-style: none;
+    margin: 0;
+    padding: 10px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 
 }
 
-/*________________________________________________________*/
-
-.button a {
+.secondary-menu__button a {
 
     font: inherit;
-    width: 200px;
+    width: 180px;
     text-align: center;
     color: #f8f8ed;
     vertical-align: middle;
@@ -380,9 +323,9 @@ font-size: 0.85em;
     margin: 5px;
 }
 
-.button:hover a,
-.button:focus a,
-.button:active a {
+.secondary-menu__button:hover a,
+.secondary-menu__button:focus a,
+.secondary-menu__button:active a {
     background: #feeb95;
     color: #80b0e1;
     border-radius: 25px;
@@ -390,96 +333,41 @@ font-size: 0.85em;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.visually-hidden {
-    position: absolute;
-
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-
-    border: 0;
-
-    clip: rect(0 0 0 0);
-}
-
-.homeNav {
-    font-size: 0.875em; /* 14px / 16px */
-    list-style: none;
-    margin: 0;
-    padding: 10px 15px;
-    display: flex;
-    /* flex-direction: row;*/
-    /*justify-content: center;*/
-    flex-flow: row wrap;
-    justify-content: flex-end;
-
-}
-
-.homeNav_1 {
-   flex-basis: 22%;
-    margin: auto;
-    /*flex: 1 1 auto;*/
-
-}
-
-.homeNav_2 {
+.secondary-menu__flex-item {
     flex-basis: 22%;
     margin: auto;
     /*flex: 1 1 auto;*/
-}
-
-.homeNav_3 {
-    flex-basis: 22%;
-    margin: auto;
-    /*flex: 1 1 auto;*/
-}
-
-.homeNav_4 {
-   flex-basis: 22%;
-    margin: auto;
-    /*flex: 1 1 auto;*/
 
 }
-
-/*.homeNav-wrapper {
-    width: 100%;
-    margin-bottom: 5px;
-}*/
 
 @media all and (max-width: 800px) {
-    .homeNav{
+    .secondary-menu {
         /* When on medium sized screens, we center it by evenly distributing empty space around items */
         justify-content: space-around;
     }
 }
 
 /* Small screens */
-@media all and (max-width:  500px) {
-    .homeNav {
+@media all and (max-width: 500px) {
+    .secondary-menu {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
 }
 
-.homeNav a {
+.secondary-menu a {
     display: block;
     padding: 8px 15px;
 
 }
-.homeNav-wrap{
+
+.secondary-menu__wrapper {
     max-width: 1050px;
     margin: 0 auto;
 
 }
-/*Сеточные стили*/
 
-/*.container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-}*/
+/*Сеточные стили*/
 
 
 
@@ -553,6 +441,7 @@ a:focus {
     border: none;
     border-radius: 25px;
 }
+
 /*_________________________________________________________________*/
 .table {
     border: 1px solid #CCCCCC;
@@ -607,4 +496,18 @@ a:focus {
 
 .table tfoot td {
     font-size: 0.875em; /* 14px / 16px */
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+
+    border: 0;
+
+    clip: rect(0 0 0 0);
 }

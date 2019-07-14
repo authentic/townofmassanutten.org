@@ -9,16 +9,19 @@
 
 <div class="outer-wrap">
 
-  <header class="masthead">
+  <header class="header-area">
     <div class="centered">
-      <div class="site-branding">
+      <div class="site-title">
         <h1>Town Incorporation of Massanutten</h1>
 
         <p>Feasibility Study</p>
-      </div>    <!-- .site-title -->
-    </div>  <!-- .centered -->
+      </div>
+      <!-- .site-title -->
+    </div>
+    <!-- .centered -->
 
-  </header> <!-- .masthead -->
+  </header>
+  <!-- .masthead -->
 
 
   <div class="content">
@@ -32,25 +35,18 @@
       </article>
     </main>
 
-  </div>
-  <!-- .content -->
-  <footer class="footer-area" role="contentinfo">
-    <div class="homeNav-wrap">
-      <!-- <nav class="main-menu">
-         The menu would go here
-       </nav>-->
-      <nav class="homeNav">
-
-        <div class="button homeNav_1"><%= link_to "View Report", "/forward" %></div>
-        <div class="button homeNav_2"><%= link_to("View Videos", "") %></div>
-        <div class="button homeNav_3"><%= link_to("Print Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvNjFlemIzcnk1el90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf", :target => "_blank") %></div>
-        <div class="button homeNav_4"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvOHdseHYycHlva190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf", :target => "_blank") %></div>
-
+  </div>    <!-- .content -->
+  <footer class="footer-area">
+    <div class="secondary-menu__wrapper">
+      <nav class="secondary-menu">
+        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to "View Report", "/forward" %></div>
+        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("View Videos", "") %></div>
+        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("Print Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvNjFlemIzcnk1el90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf", :target => "_blank") %></div>
+        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvOHdseHYycHlva190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf", :target => "_blank") %></div>
       </nav>
-    </div>
+    </div>  <!-- .secondary-menu__wrapper -->
     <%= render "/refinery/footer" -%>
   </footer>
-</div>
-<!-- .outer-wrap -->
+</div>  <!-- .outer-wrap -->
 </body>
 </html>
