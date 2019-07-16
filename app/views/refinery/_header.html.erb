@@ -1,9 +1,10 @@
-<div class="container header">
-<%= content_tag :div, id: "logo", itemscope: "",  itemtype: "http://schema.org/Organization" do %>
-  <%= link_to refinery.root_path, itemprop: "" do %>
-  <%= image_tag("Newheader.png") %>
+<figure class="figure">
+  <%= content_tag :div, id: "logo", itemscope: "", itemtype: "http://schema.org/Organization" do %>
+      <%= link_to refinery.root_path, itemprop: "" do %>
+          <%= image_tag("Newheader.png", class: "figure-img img-fluid rounded  w-100") %>
 
-        <h1 class="visually-hidden"><%= Refinery::Core.site_name %></h1>
+          <!--<h1 class="visually-hidden"><%= Refinery::Core.site_name %></h1>-->
+      <% end %>
   <% end %>
-<% end %></div>
 
+  </figure>

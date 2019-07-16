@@ -7,43 +7,45 @@
 </head>
 <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
 
-<div class="outer-wrap">
+<header class="hov-header-area text-center">
 
-  <header class="header-area">
-    <div class="centered">
-      <div class="site-title">
-        <h1>Town Incorporation of Massanutten</h1>
+  <h1>Town Incorporation of Massanutten</h1>
 
-        <p>Feasibility Study</p>
-      </div>    <!-- .site-title -->
-    </div>  <!-- .centered -->
+  <p>Feasibility Study</p>
 
-  </header>  <!-- .header-area -->
+</header>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+    <main>
+
+      <figure class="figure ">
+        <img src="../../../system/refinery/images/W1siZiIsIjIwMTgvMDkvMDcvNGRneGduNzV6Nl9ob21lcGFnZW5ldy5qcGciXV0/homepagenew.jpg" width="950px" class="figure-img img-fluid rounded " alt="Town of Massanutten Area">
+        <figcaption class="figure-caption"></figcaption>
+      </figure>
 
 
-  <div class="content">
-
-
-    <main class="main-area">
-      <article class="post-content">
-        <div>
-          <img src="../../../system/refinery/images/W1siZiIsIjIwMTgvMDkvMDcvNGRneGduNzV6Nl9ob21lcGFnZW5ldy5qcGciXV0/homepagenew.jpg" alt="Town of Massanutten Area" width="940">
+      <nav class="navbar navbar-expand-sm text-uppercase">
+        <div class="container justify-content-center">
+          <ul class="navbar-nav hov-secondary-nav">
+            <li class="nav-item"><%= link_to "View Report", "/forward", class: "nav-link" %></li>
+            <li class="nav-item"> <%= link_to("View Videos", "/videos", class: "nav-link") %></li>
+            <li class="nav-item"><%= link_to("Print Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvNjFlemIzcnk1el90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf", :target => "_blank", class: "nav-link") %></li>
+            <li class="nav-item"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvOHdseHYycHlva190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf", :target => "_blank", class: "nav-link") %></li>
+          </ul>
         </div>
-      </article>
-    </main>
-
-  </div>    <!-- .content -->
-  <footer class="footer-area">
-    <div class="secondary-menu__wrapper">
-      <nav class="secondary-menu">
-        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to "View Report", "/forward" %></div>
-        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("View Videos", "") %></div>
-        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("Print Report", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvNjFlemIzcnk1el90b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0LnBkZiJdXQ/town_incorporation_study_final_report.pdf", :target => "_blank") %></div>
-        <div class="secondary-menu__button secondary-menu__flex-item"><%= link_to("Print Summary", "/system/refinery/resources/W1siZiIsIjIwMTgvMTAvMTQvOHdseHYycHlva190b3duX2luY29ycG9yYXRpb25fc3R1ZHlfZmluYWxfcmVwb3J0X3N1bW1hcnkucGRmIl1d/town_incorporation_study_final_report_summary.pdf", :target => "_blank") %></div>
       </nav>
-    </div>  <!-- .secondary-menu__wrapper -->
+    </main>
+  </div>
+</div>
+</div>
+<footer class="hov-footer-area text-center">
+
     <%= render "/refinery/footer" -%>
-  </footer>
-</div>  <!-- .outer-wrap -->
+
+</footer>
+
+
 </body>
 </html>

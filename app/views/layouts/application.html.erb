@@ -7,39 +7,42 @@
 </head>
 <body id="<%= canonical_id @page %>" class="<%= view_template_class @page %>">
 
-<div class="outer-wrap">
-  <%= site_bar -%>
+<%= site_bar -%>
 
-  <header class="header-area">
-    <div class="centered">
-      <%= render "/refinery/header" -%>
-    </div>
-    <!-- .centered -->
-  </header>
-  <!-- .header-area -->
-  <div class="content">
-    <div class="sidebar">
-      <div>
+<header class="hov-header-area text-center  ">
+
+  <%= render "/refinery/header" -%>
+
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+
+      <nav class="navbar navbar-inverse">
+
         <% cache [I18n.locale, 'main_menu', @page, Refinery::Page.fast_menu.map(&:updated_at).max] do %>
             <%=
                 main_menu = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
-                main_menu.menu_role = 'navigation'
                 main_menu.to_html
             %>
-        <% end %></div>
-    </div><!-- .sidebar -->
-  <main class="main-area">
+        <% end %>
+      </nav>
+    </div>
+    <div class="col-sm-8">
+      <main class="main-area">
+
+        <div><%= yield %></div>
+
+      </main>
+    </div>
+
+  </div>
+</div>
+<footer class="hov-footer-area text-center">
+
+  <%= render "/refinery/footer" -%>
+</footer>
 
 
-      <div><%= yield %></div>
-
-
-  </main>
-  </div>    <!-- .content -->
-  <footer class="footer-area">
-    <%= render "/refinery/footer" -%>
-  </footer>
-
-</div><!-- .outer-wrap -->
 </body>
 </html>
