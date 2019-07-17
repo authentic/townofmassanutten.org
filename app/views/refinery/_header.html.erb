@@ -1,10 +1,15 @@
-<figure class="figure">
-  <%= content_tag :div, id: "logo", itemscope: "", itemtype: "http://schema.org/Organization" do %>
-      <%= link_to refinery.root_path, itemprop: "" do %>
-          <%= image_tag("Newheader.png", class: "figure-img img-fluid rounded  w-100") %>
+<div class="container">
+<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-row  flex-sm-row flex-md-row flex-lg-row flex-xl-row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center flex-wrap flex-sm-wrap flex-md-wrap flex-lg-wrap flex-xl-wrap">
+  <div class="p-2 bd-highlight"><%= content_tag :div, id: "logo", itemscope: "", itemtype: "http://schema.org/Organization" do %>
+        <%= link_to refinery.root_path, itemprop: "" do %>
+            <%= image_tag("Logo1.png", class: "img-fluid") %>
 
-          <!--<h1 class="visually-hidden"><%= Refinery::Core.site_name %></h1>-->
-      <% end %>
-  <% end %>
 
-  </figure>
+        <% end %>
+    <% end %> </div>
+  <div class="p-2 bd-highlight"><h1 ><%= Refinery::Core.site_name %></h1>
+    </div>
+
+</div>
+
+</div>
