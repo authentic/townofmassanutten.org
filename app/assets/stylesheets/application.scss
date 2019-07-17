@@ -126,9 +126,19 @@ body {
 
   clip: rect(0 0 0 0);
 }
-
+//Override Bootstrap Defaults - Navigation
 .dropdown-menu{
   background-color: transparent;
   padding-left: 1rem;
   border: none;
+}
+//Override Bootstrap Defaults - pagination
+.page-item.active .page-link {
+  background-color: #80b0e1;
+  border-color: #80b0e1;
+  color: #f8f8ed;
+}
+
+.page-link {
+  background-color:  #f8f8ed;
 }
