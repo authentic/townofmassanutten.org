@@ -13,12 +13,12 @@ font-family: 'Merriweather Sans', sans-serif;*/
 body {
   background-color: #f8f8ed;
 }
-.hov-header-area{
+.hov-header-area {
   font-family: 'Merriweather', serif;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
   color: #990033;
-  font-size: 2.5rem;
-}
+
+  }
 
 .hov-footer-area {
   font-family: 'Merriweather', serif;
@@ -145,25 +145,7 @@ body {
 .page-link {
   background-color:  #f8f8ed;
 }
-#body_content_title{
-  font-family: 'Merriweather', serif;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-  color: #003366;
-  font-size: 1.5rem;
-}
 
-h2{
-  font-family: 'Merriweather', serif;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-  color: #003366;
-  font-size: 1.2rem;
-}
-h2{
-  font-family: 'Merriweather', serif;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-  color: #003366;
-  font-size: 1.2rem;
-}
 
 
 abbr:active::after
@@ -174,3 +156,85 @@ abbr:active::after
 
 }
 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  h1, .h1 {
+    font-size: 1.5rem;
+  }
+  #body_content_title{
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1, .h1 {
+    font-size: 1.6rem;
+  }
+    #body_content_title{
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1, .h1 {
+    font-size: 1.7rem;
+  }
+
+  #body_content_title{
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+
+  #body_content_title{
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+
+  #body_content_title{
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+
+}
+#body_content_title{
+  font-family: 'Merriweather', serif;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #003366;
+
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #003366;
+
+}
